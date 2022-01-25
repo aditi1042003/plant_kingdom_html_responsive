@@ -1,0 +1,57 @@
+ /*<!-- in class case prefix is .classname--->*/
+ /*<!--- keep smallcase and use dash instead of dot and prefix is #--->*/
+ /*<!-- heder<class<id <inline style--->*/
+
+body {background: lightcyan;}
+.title {
+	color: darkgreen;
+}
+.subtitle {
+	color:palegreen ;
+}
+#contact:hover {
+	color: darkred;}
+#aim {
+	color: deeppink;
+}
+/*li:last-child
+	color: firebrick;*/
+}
+/* #linker:link {
+	color: blue;
+}
+#linker:visited {
+	color: mediumvioletred;
+}
+*/
+li {
+	color: darkgreen;
+}
+/*advance selector*/
+/*for where if something in between works*/
+h2 + p {color:hotpink;}
+/*has to just follow*/
+textarea ~ button { color:purple; }
+/*child case*/
+ul > li {
+	color: teal;
+}
+
+/*desendent case all li */
+/* ul li{
+	color: orange;
+} */
+
+
+/*attribute selector*/
+h2[class=subtitle]{
+	color: black;
+}
+/*to select a part ^for start $for end *anywhere */
+img[src^="../images/"] {
+	border: 10px solid black;
+}
+/*adding secind claass and usijng it to select*/
+h2[class~="article"]{
+	background: turquoise;
+}
